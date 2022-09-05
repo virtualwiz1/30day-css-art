@@ -1,0 +1,158 @@
+body{
+    background: #a0d0d1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    animation: sky 8s linear forwards infinite;
+}
+
+@keyframes sky {
+    20%{
+        background-color: #a0d0d1;
+    }
+    50%{
+        background-color: #fff9a3;
+    }
+    70%{
+        background-color: #cb8389;
+    }
+    100%{
+        background-color: #574168;
+    }
+}
+
+.waves{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    height: 20px;
+    background-size: 40px 40px;
+    background-image: radial-gradient(
+        circle at 20px -5px,
+        transparent 22px,
+        #2d90af 18px
+    );
+    background-repeat: repeat;
+    animation: waves 10s infinite forwards linear;
+}
+
+.waves::before{
+    position: absolute;
+    content: '';
+    background-color: #2d90af;
+    height: 30px;
+    width: 100vw;
+    bottom: -30px;
+}
+
+@keyframes waves {
+    100%{
+        transform: translateX(200px);
+    }
+}
+
+.sand{
+    background-color: #efbd4a;
+    height: 58px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 100% 0 0;
+}
+
+.tree{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    border: 5px solid transparent;
+    border-right: 50px solid #b8561f;
+    bottom: -80px;
+    border-radius: 50%;
+    transform: rotate(50deg);
+    left: -360px;
+    z-index: -1;
+}
+
+.tree>div:nth-child(1){
+    height: 120px;
+    width: 150px;
+    position: absolute;
+    right: 75px;
+    border-radius: 50%;
+    border-top: 40px solid #736d31;
+    transform: rotate(-60deg);
+}
+
+.tree>div:nth-child(2){
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    right: 10px;
+    top: -90px;
+    border-radius: 50%;
+    border-top: 40px solid #736d31;
+    transform: rotate(-65deg);
+}
+
+.tree>div:nth-child(3){
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    right: 50px;
+    border-radius: 50%;
+    border-top: 40px solid #736d31;
+    transform: rotate(-70deg);
+}
+
+.tree>div:nth-child(4){
+    background-color: #736d31;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    right: 15px;
+    top: -30px;
+    border-radius: 120px 120px 0 0;
+    transform: rotate(10deg);
+}
+
+.tree>div:nth-child(5){
+    background-color: #736d31;
+    height: 45px;
+    width: 90px;
+    position: absolute;
+    top: 40px;
+    right: 71px;
+    transform: rotate(-110deg);
+    border-radius: 120px 120px 0 0;
+}
+
+.tree>div:nth-child(6){
+    height: 120px;
+    width: 150px;
+    position: absolute;
+    border-top: 50px solid #736d31;
+    top: -45px;
+    right: 110px;
+    border-radius: 50%;
+}
+
+.sun{
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 320px;
+    z-index: -2;
+    animation: sunset 8s linear forwards infinite;
+}
+
+@keyframes sunset {
+    100%{
+        transform: translateY(480px);
+    }
+}
