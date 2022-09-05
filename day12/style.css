@@ -5,6 +5,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+.text{
+    text-align: center;
+    font-size: 28px;
+    font-family: arial;
+}
 .fan{
     height: 350px;
     width: 350px;
