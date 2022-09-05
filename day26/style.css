@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+h2{
+    font-size: 78px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+h2 span{
+    transition: 0.5s;
+}
+
+h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+
+h2:hover span:nth-child(1)::after{
+    content: "'";
+
+}
+
+h2:hover span:nth-child(2){
+    margin-left: 30px;
+}
+
+h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
+}
