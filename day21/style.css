@@ -4,6 +4,14 @@ body{
     background-color: #efb54a;
 }
 
+.text{
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
 .container{
     height: 350px;
     width: 350px;
