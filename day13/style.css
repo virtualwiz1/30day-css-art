@@ -1,116 +1,198 @@
-*,
-*:before,
-*:after{
+body{
+    background-color: #151845;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-.text{
-    text-align: center;
-    font-size: 28px;
-    font-family: arial;
-}
-.fan{
-    height: 350px;
-    width: 350px;
+
+.container{
+    height: 370px;
+    width: 370px;
     position: absolute;
     margin: auto;
+    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
 }
-label{
-    display: block;
-    height: 20px;
-    width: 20px;
-    background-color: black;
-    position: absolute;
-    margin: 120px auto 0 auto;
-    left: 0;
-    right: 0;
+
+.moon{
+    background-color: #39beff;
+    height: 170px;
+    width: 170px;
     border-radius: 50%;
-    animation: spin 1s infinite linear;
-    animation-play-state: paused;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
 }
+
+.crater{
+    background-color: #31b4ff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.crater:before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: -5px 0 0 2px #1ca4f9;
+    top: 2px;
+    left: 7px;
+}
+
+.crater-1{
+    top: 27px;
+    left: 90px;
+    transform: scale(0.9);
+}
+
+.crater-2{
+    bottom: 15px;
+    left: 61px;
+    transform: scale(0.6);
+}
+
+.crater-3{
+    left: 15px;
+    transform: scale(0.75);
+}
+
+.crater-4{
+    left: 107px;
+    top: 32px;
+    transform: scale(1.18);
+}
+
+.crater-5{
+    left: 33px;
+    bottom: 4px;
+    transform: scale(0.65);
+}
+
+.shadow{
+    height: 190px;
+    width: 190px;
+    box-shadow: 21px 0 0 5px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    position: relative;
+    bottom: 157.5px;
+    right: 46px;
+}
+
+.eye{
+    height: 12px;
+    width: 12px;
+    background-color: #161616;
+    position: relative;
+    border-radius: 50%;
+}
+
+.eye-l{
+    bottom: 255px;
+    left: 59px;
+}
+
+.eye-r{
+    bottom: 267px;
+    left: 101px;
+}
+
+.mouth{
+    height: 5px;
+    width: 10px;
+    border: 3px solid #161616;
+    position: relative;
+    bottom: 262px;
+    left: 79px;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.blush{
+    height: 7.5px;
+    width: 7.5px;
+    background-color: #1ca4f9;
+    position: relative;
+    border-radius: 50%;
+}
+
+.blush-1{
+    bottom: 273px;
+    left: 50px;
+}
+
+.blush-2{
+    bottom: 281px;
+    left: 115px;
+}
+
+.orbit{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: spin 5s infinite linear;
+}
+
 @keyframes spin{
     100%{
         transform: rotate(360deg);
-    }    
+    }
 }
 
-label:after{
-    content: "";
+.rocket{
+    background-color: #fafcf7;
+    height: 50px;
+    width: 25px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    left: -11px;
+    top: 115px;
+}
+
+.rocket:before{
     position: absolute;
-    height: 70px;
-    width: 70px;
-    background-color: #005fe4;
-    border: 10px solid #00317e;
+    content: "";
+    background-color: #39beff;
+    height: 20px;
+    width: 55px;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    right: -15px;
+    bottom: 0;
+}
+
+.rocket:after{
+    position: absolute;
+    content: "";
+    background-color: #39beff;
+    height: 4px;
+    width: 15px;
+    border-radius: 0 0 2px 2px;
+    bottom: -4px;
+    left: 4.3px;
+}
+
+.window{
+    height: 10px;
+    width: 10px;
+    background-color: #151845;
+    border: 2px solid #b8d2ec;
     border-radius: 50%;
-    left: -25px;
-    bottom: -25px; 
-}
-label span{
-    display: block;
-    height: 120px;
-    width: 70px;
-    background-color: #fdbf00;
-    border-radius: 55% 45% 100% 0% / 39% 28% 72% 61%;
-    position: absolute;
-    z-index: -1;
-}
-span:nth-child(1){
-    bottom: 10px;
-    left: 10px;
-}
-span:nth-child(2){
-    transform: rotate(-120deg);
-    left: -95px;
-    top: -50px;
-}
-span:nth-child(3){
-    transform: rotate(-240deg);
-    right: -60px;
-    top: 10px;
-}
-.base{
-    height: 160px;
-    width: 20px;
-    background-color: #00317e;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 140px;
-    z-index: -1;
-}
-.base:after{
-    content: "";
-    position: absolute;
-    height: 35px;
-    width: 150px;
-    background-color: #fdbf00;
-    left: -65px;
-    top: 160px;
-    border-radius: 20px 20px 0 0;
-}
-input[type="checkbox"]{
-    position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 12px;
-    width: 20px;
-    background-color: #c30010;
-    position: absolute;
-    bottom: 50px;
-    left: 130px;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-}
-input[type="checkbox"]:checked{
-    height: 8px;
-}
-input[type="checkbox"]:checked + label{
-    animation-play-state: running;
+    position: relative;
+    top: 17px;
+    left: 5px;
 }
