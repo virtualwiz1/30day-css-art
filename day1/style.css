@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #49a09d;
+}
+
+.penguin{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+
+}
+
+.penguin *{
+    position: absolute;
+}
+
+.penguin-top{
+
+    width: 50%;
+    height: 45%;
+    background: #000;
+    border-radius: 70% 70% 60% 60%;
+    top: 10%;
+    left: 25%;
+}
+
+.penguin-bottom{
+    width: 53%;
+    height: 45%;
+    background: #000;
+    top: 40%;
+    left: 23.5%;
+    border-radius: 70% 70% 100% 100%;
+}
+
+.right-hand{
+    width: 30%;
+    height: 60%;
+    background: #000;
+    border-radius: 30% 30% 120% 30%;
+    top: 0;
+    left: -5%;
+    transform: rotate(45deg);
+}
+
+.left-hand{
+    width: 30%;
+    height: 60%;
+    background: #000;
+    border-radius: 30% 30% 30% 120%;
+    top: 0;
+    left: 75%;
+    transform: rotate(-45deg);
+}
+
+.right-cheek{
+    width: 60%;
+    height: 70%;
+    background: #fff;
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+    left: 35%;
+}
+
+.left-cheek{
+    width: 60%;
+    height: 70%;
+    background: #fff;
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+    left: 5%;
+}
+
+.belly{
+    width: 95%;
+    height: 100%;
+    background: #fff;
+    border-radius: 120% 120% 100% 100%;
+    top:60%;
+    left: 2.5%;
+}
+
+.right-feet{
+    width: 15%;
+    height: 30%;
+    background: orange;
+    border-radius: 50%;
+    top: 85%;
+    left: 60%;
+    transform: rotate(80deg);
+    z-index: -2222;
+}
+
+.left-feet{
+    width: 15%;
+    height: 30%;
+    background: orange;
+    border-radius: 50%;
+    top: 85%;
+    left: 25%;
+    transform: rotate(-80deg);
+    z-index: -2222;
+}
+
+.right-eye{
+    width: 15%;
+    height: 17%;
+    background: #000;
+    border-radius: 50%;
+    top: 45%;
+    left: 60%;
+}
+
+.left-eye{
+    width: 15%;
+    height: 17%;
+    background: #000;
+    border-radius: 50%;
+    top: 45%;
+    left: 22%;
+}
+
+.sparkle{
+    width: 35%;
+    height: 35%;
+    background: #fff;
+    border-radius: 50%;
+    top: 25%;
+    left: 15%;
+}
+
+.right-blush{
+    width: 15%;
+    height: 10%;
+    background: pink;
+    border-radius: 50%;
+    top:65%;
+    left: 15%;
+}
+
+.left-blush{
+    width: 15%;
+    height: 10%;
+    background: pink;
+    border-radius: 50%;
+    top:65%;
+    left: 70%;
+}
+
+.top-beak{
+    width: 20%;
+    height: 10%;
+    background: orange;
+    border-radius: 50%;
+    top: 60%;
+    left: 40%;
+}
+
+.bottom-beak{
+    width: 16%;
+    height: 10%;
+    background: orange;
+    border-radius: 50%;
+    top: 66%;
+    left: 42%;
+}
