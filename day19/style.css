@@ -11,6 +11,12 @@ body{
     left: 50%;
     top: 50%;
 }
+.text{
+  color: white;
+  font-family: arial;
+  font-size: 28px;
+  text-align: center;
+}
 /* Lamp Top */
 .lamp{
     height: 0;
