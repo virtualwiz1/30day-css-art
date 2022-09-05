@@ -8,6 +8,13 @@ body{
     background: #A084CA;
 }
 
+.text{
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    color: white;
+}
+
 .box{
     position: relative;
     width: 300px;
